@@ -1,0 +1,168 @@
+/*Include font from googleapi*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav-header {
+    background: #f8f8f8;
+    height: calc(2em + 1vh);
+	width: 100%;
+}
+
+#app{
+    background-color: #f3f3f3;
+	color: #7b7b7b;
+}
+
+#section-products {
+    margin: 0 3%;
+}
+
+.product-container{
+	justify-content: center;
+}
+
+.logo-eve{
+	background-image: url(../img/eve-logo.png);
+	background-size: 4em;
+	height: 4em;
+	width: 4em;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: absolute;
+}
+
+.product-item, #pagination-wrapper, .tools-wrapper li:hover {
+   cursor: pointer;
+}
+
+.product-image{
+	border: #f7f7f7 solid 0.6em;
+    margin: 1em;
+}
+
+.product-image:hover .item-transp-header{
+	opacity: 0.8;
+}
+
+.content-overlay {
+  background: rgba(247, 247, 247, 0.69);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.product-item:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  color:#7b7b7b; 
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.product-item:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.item-header{
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 0.2px;
+}
+
+.item-transp-header{
+	-webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#subhead-img{
+	height: calc(3em + 3vh);
+    width: auto;
+    margin: auto;
+    display: block;
+
+}
+
+.filter-wrapper{
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 7%;
+}
+
+.tools-wrapper{
+	width: 100%;
+}
+
+.tools-wrapper ul {
+	padding-left: 0px;
+}
+
+.tools-wrapper li{
+	border: #b3797a solid 2px;
+	width: auto;
+	margin: 0% 1%;
+	text-align: center;
+	padding: 0 1%;
+}
+
+.tools-wrapper li:hover{
+    background-color: #eae6e6;
+}
+
+#pagination-wrapper{
+	width: 100%;
+}
+
+#pagination-wrapper span {
+	border-bottom: #7b7b7b 1px solid;
+	color: #7b7b7b;
+}
+
+#pagination-wrapper span:hover
+{
+	color: #303030;
+}
+
+#footer{
+	height: calc(7em + 1vh);
+    background-color: #f8f8f8;
+}
+
+.footer-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
